@@ -11,7 +11,8 @@
 If Player 1 wins, the result is highlighted in green.
 If the computer wins, the result is shown in red.
 In case of a draw, the result appears in orange.
-Username Customization: Player 1 can change their username by typing in an input field and pressing the "Change Name" button.
+<h3>Username Customization:</h3>
+Player 1 can change their username by typing in an input field and pressing the "Change Name" button.
 
 ﻿<h2> Technologies Used </h2>
 <h3>React:</h3>
