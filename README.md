@@ -1,12 +1,12 @@
 ﻿# Dice-Games
 ﻿# This is a simple dice game built using React. The game includes two dice: one for Player 1 and the other for the computer. The player can roll the dice, and the game will announce the result as either "Win", "Lose", or "Draw" based on the dice outcomes. Additionally, Player 1 can modify their username using a text input.
 
-﻿#﻿# Features
-Two Dice: One die represents the player, while the other represents the computer.
-
-Roll Dice Button: When the button is pressed, both dice will roll, and the dice faces will change for 3 seconds before stopping.
-
-Game Result: After the dice stop rolling, the result is displayed as "Win", "Lose", or "Draw" based on the dice outcomes.
+﻿<h2> Features </h2>
+ <ol>
+    <li>Two Dice: One die represents the player, while the other represents the computer.</li>
+    <li>Roll Dice Button: When the button is pressed, both dice will roll, and the dice faces will change for 3 seconds before stopping.</li>
+    <li>Game Result: After the dice stop rolling, the result is displayed as "Win", "Lose", or "Draw" based on the dice outcomes.</li>
+  </ol>
 
 If Player 1 wins, the result is highlighted in green.
 If the computer wins, the result is shown in red.
@@ -34,5 +34,12 @@ HTML/CSS: For structuring and styling the app.
     <li><strong>Start the development server:</strong>
       <pre><code>npm run dev</code></pre>
     </li>
-    <li><strong>Open your browser and go to http://localhost:5173/</strong></li>
+    <li><strong>Open your browser and go to localhost:5173</strong></li>
+  </ol>
+
+<h2> Future Improvements </h2>
+  <ol>
+    <li>Implement additional game modes, such as multiplayer or higher difficulty levels.</li>
+    <li>Add animations and sound effects to make the game more engaging.</li>
+    <li>Track and display the player's score across multiple rounds.</li>
   </ol>
