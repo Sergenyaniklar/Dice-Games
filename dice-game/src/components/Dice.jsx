@@ -3,12 +3,12 @@ import React from 'react';
 
 const Dice = ({ value, isRolling }) => {
   const diceImages = {
-    1: '/images/dice1.png',
-    2: '/images/dice2.png',
-    3: '/images/dice3.png',
-    4: '/images/dice4.png',
-    5: '/images/dice5.png',
-    6: '/images/dice6.png'
+    1: '../public/images/dice1.png',
+    2: '../public/images/dice2.png',
+    3: '../public/images/dice3.png',
+    4: '../public/images/dice4.png',
+    5: '../public/images/dice5.png',
+    6: '../public/images/dice6.png',
   };
 
   return (
