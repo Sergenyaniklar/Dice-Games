@@ -1,5 +1,5 @@
 ﻿# Dice-Games
-﻿# This is a simple dice game built using React. The game includes two dice: one for Player 1 and the other for the computer. The player can roll the dice, and the game will announce the result as either "Win", "Lose", or "Draw" based on the dice outcomes. Additionally, Player 1 can modify their username using a text input.
+﻿This is a simple dice game built using React. The game includes two dice: one for Player 1 and the other for the computer. The player can roll the dice, and the game will announce the result as either "Win", "Lose", or "Draw" based on the dice outcomes. Additionally, Player 1 can modify their username using a text input.
 
 ﻿<h2> Features </h2>
  <ol>
@@ -18,7 +18,6 @@ React: JavaScript library for building user interfaces.
 JavaScript (ES6): Used for the core functionality and logic of the game.
 HTML/CSS: For structuring and styling the app.
 ﻿<h1> How to Run the Project </h1>
-<hr>
 <h2>Prerequisites</h2>
   <p>Ensure you have Node.js installed on your computer.</p>
   <ol>
