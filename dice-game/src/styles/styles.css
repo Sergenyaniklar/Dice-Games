@@ -1,110 +1,126 @@
 /* styles/styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .game-container {
-    min-height: 100vh;
-    background-color: #1f2937;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  background-color: #2C3138;  /* Darker gray background matching the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-title {
+  color: #F5E6C8;  /* Cream color for the "Draw!" text */
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Arial', cursive;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.game-title::after {
+  content: "🤝";
+  font-size: 2.5rem;
+}
+
+.players-container {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;  /* Increased gap between players */
+  margin-bottom: 2rem;
+}
+
+.player-info {
+  text-align: center;
+  color: #00FF9D;  /* Bright green color for player names */
+  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.player-name-input {
+  background-color: transparent;
+  color: #00FF9D;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+  font-family: 'Arial', sans-serif;
+  width: 120px;
+}
+
+.player-name-input:focus {
+  outline: none;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;  /* Gap between dice */
+  margin-bottom: 2rem;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background-color: #8B0000;  /* Dark red background for dice */
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px;
+  gap: 10px;
+}
+
+.dot {
+  width: 25px;
+  height: 25px;
+  background-color: #FFF;  /* White dots */
+  border-radius: 50%;
+  margin: auto;
+}
+
+.game-button {
+  background-color: #00FF9D;  /* Bright green button */
+  color: #2C3138;  /* Dark text */
+  border: none;
+  padding: 15px 100px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+  margin-left: 50px;
+}
+
+.game-button:hover:not(:disabled) {
+  background-color: #00CC7D;
+}
+
+.game-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.rolling {
+  animation: shake 0.5s infinite;
+}
+.game-result {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
   }
-  
-  .game-board {
-    background-color: #374151;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  25% {
+    transform: rotate(-5deg);
   }
-  
-  .game-title {
-    font-size: 2.5rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-weight: bold;
+  75% {
+    transform: rotate(5deg);
   }
-  
-  .players-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .dice-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .dice {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 0.5rem;
-  }
-  
-  .dice.rolling {
-    animation: bounce 0.5s infinite;
-  }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  .player-info {
-    text-align: center;
-  }
-  
-  .player-name-input {
-    background-color: transparent;
-    color: white;
-    font-size: 1.25rem;
-    text-align: center;
-    border: none;
-    border-bottom: 2px solid #2dd4bf;
-    padding: 0.25rem;
-  }
-  
-  .player-name-input:focus {
-    outline: none;
-    border-bottom-color: #14b8a6;
-  }
-  
-  .player-name {
-    color: white;
-    font-size: 1.25rem;
-  }
-  
-  .game-result {
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .game-button {
-    width: 100%;
-    background-color: #14b8a6;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .game-button:hover:not(:disabled) {
-    background-color: #0d9488;
-  }
-  
-  .game-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
+}

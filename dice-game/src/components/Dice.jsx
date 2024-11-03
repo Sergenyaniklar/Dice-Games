@@ -1,27 +1,25 @@
 // components/Dice.jsx
 import React from 'react';
-import dice1 from '../assets/images/dice1.png';
-import dice2 from '../assets/images/dice2.png';
-import dice3 from '../assets/images/dice3.png';
-import dice4 from '../assets/images/dice4.png';
-import dice5 from '../assets/images/dice5.png';
-import dice6 from '../assets/images/dice6.png';
 
 const Dice = ({ value, isRolling }) => {
   const diceImages = {
-    1: dice1,
-    2: dice2,
-    3: dice3,
-    4: dice4,
-    5: dice5,
-    6: dice6
+    1: '/images/dice1.png',
+    2: '/images/dice2.png',
+    3: '/images/dice3.png',
+    4: '/images/dice4.png',
+    5: '/images/dice5.png',
+    6: '/images/dice6.png'
   };
 
   return (
-    <div 
-      className={`dice ${isRolling ? 'rolling' : ''}`}
-      style={{ backgroundImage: `url(${diceImages[value]})` }}
-    />
+    <div className={`dice ${isRolling ? 'rolling' : ''}`}>
+      <img 
+        src={diceImages[value]} 
+        alt={`Dice showing ${value}`}
+        width="100"
+        height="100"
+      />
+    </div>
   );
 };
 
