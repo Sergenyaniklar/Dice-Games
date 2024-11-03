@@ -13,10 +13,13 @@ If the computer wins, the result is shown in red.
 In case of a draw, the result appears in orange.
 Username Customization: Player 1 can change their username by typing in an input field and pressing the "Change Name" button.
 
-Technologies Used
-React: JavaScript library for building user interfaces.
-JavaScript (ES6): Used for the core functionality and logic of the game.
-HTML/CSS: For structuring and styling the app.
+﻿<h2> Technologies Used </h2>
+<h3>React:</h3>
+JavaScript library for building user interfaces.
+<h3>JavaScript (ES6)</h3>
+Used for the core functionality and logic of the game.
+<h3>HTML/CSS:</h3>
+For structuring and styling the app.
 ﻿<h1> How to Run the Project </h1>
 <h2>Prerequisites</h2>
   <p>Ensure you have Node.js installed on your computer.</p>
